@@ -221,6 +221,33 @@ body {
 }
 .puzzle-card:hover .chip-dot { background: var(--gold); }
 
+/* SPECIAL EDITION */
+.puzzle-card.special-edition {
+  border-color: var(--gold);
+  position: relative;
+}
+.puzzle-card.special-edition .card-header {
+  background: linear-gradient(135deg, var(--ink) 0%, #2a1f0a 100%);
+}
+.puzzle-card.special-edition .card-puzzle-num {
+  color: var(--gold);
+}
+.puzzle-card.special-edition .card-title {
+  color: var(--gold);
+}
+.puzzle-card.special-edition .play-btn {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+.puzzle-card.special-edition .play-btn:hover {
+  background: var(--red);
+  border-color: var(--red);
+}
+.puzzle-card.special-edition:hover {
+  border-color: var(--gold);
+  box-shadow: 0 8px 24px rgba(184, 134, 11, 0.2);
+}
+
 .card-hook {
   font-size: 13px;
   font-style: italic;
@@ -731,19 +758,48 @@ body {
       </div>
     </div>
 
+    <!-- Puzzle #4 -->
+    <div class="puzzle-card">
+      <div class="card-header">
+        <div class="card-puzzle-num">Puzzle #4</div>
+        <div class="card-status live">Live</div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">"Can You Hear Me Now?"</div>
+        <div class="card-companies">
+          <div class="company-chip"><div class="chip-dot"></div> AT&T</div>
+          <div class="company-chip"><div class="chip-dot"></div> Verizon</div>
+          <div class="company-chip"><div class="chip-dot"></div> T-Mobile</div>
+        </div>
+        <div class="card-hook">One spent nothing. The other two look almost identical — almost.</div>
+        <a class="play-btn" href="https://follow-the-money-telecom.moralfibermedia.com">▶ Play Now</a>
+      </div>
+    </div>
+
+    <!-- Special Edition -->
+    <div class="puzzle-card special-edition">
+      <div class="card-header">
+        <div class="card-puzzle-num">★ Special Edition</div>
+        <div class="card-status live">Live</div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">"Georgia on My Mind"</div>
+        <div class="card-companies">
+          <div class="company-chip"><div class="chip-dot"></div> Coca-Cola</div>
+          <div class="company-chip"><div class="chip-dot"></div> Delta Air Lines</div>
+          <div class="company-chip"><div class="chip-dot"></div> Home Depot</div>
+        </div>
+        <div class="card-hook">All three HQ'd in Georgia. All three in the spotlight since 2021.</div>
+        <a class="play-btn" href="https://follow-the-money-georgia.moralfibermedia.com">▶ Play Now</a>
+      </div>
+    </div>
+
   </div>
 
   <!-- COMING SOON -->
   <div class="coming-soon-section">
     <div class="section-label">Coming Soon</div>
     <div class="coming-list">
-      <div class="coming-item">
-        <div class="coming-num">#4</div>
-        <div class="coming-info">
-          <div class="coming-name">"Can You Hear Me Now?"</div>
-          <div class="coming-companies">AT&T · Verizon · T-Mobile</div>
-        </div>
-      </div>
       <div class="coming-item">
         <div class="coming-num">#5</div>
         <div class="coming-info">
@@ -767,13 +823,6 @@ body {
       </div>
       <div class="coming-item">
         <div class="coming-num">#8</div>
-        <div class="coming-info">
-          <div class="coming-name">"Georgia on My Mind"</div>
-          <div class="coming-companies">Coca-Cola · Delta · Home Depot</div>
-        </div>
-      </div>
-      <div class="coming-item">
-        <div class="coming-num">#9</div>
         <div class="coming-info">
           <div class="coming-name">"Morning Fix"</div>
           <div class="coming-companies">Starbucks · Dunkin' · McDonald's</div>
